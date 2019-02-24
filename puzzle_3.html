@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="estilos.css">
+	<style>
+
+		img{
+			margin: 3px;
+		}
+		.dropzone_pr2{
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	</style>
+</head>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-4"><img src="imgPractica/logo.png" alt="">
+					<h1>Puzzlelandia</h1>
+				</div>
+				<div class="col-4 d-flex justify-content-center">
+					<div class="git_contact">
+						<a href="https://github.com/MNoventa" target="blank"><span class="fab fa-github"></span>  MNoventa</a>
+					</div>
+				</div>
+				<div class="col-4 text-right">
+					<div class="dropdown">
+					  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Ver puzzles
+					  </a>
+
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					    <a class="dropdown-item" href="puzzle_1.html">Arrastra las frutas (J-1)</a>
+					    <a class="dropdown-item" href="puzzle_2.html">Crea imagen de gatito (J-2)</a>
+					    <a class="dropdown-item" href="puzzle_3.html">Crea imagen de paisaje (J-3)</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container titulo_h2">
+		<div class="row">	
+			<div class="col-6">
+				<h2>Juego 3</h2>
+			</div>
+			<div class="col-6 d-flex justify-content-end">
+				<div class="text-center" id="div_resetear">
+					Resetear
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="instrucciones">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<span><i class="fas fa-exclamation-triangle"></i>En el juego número 3 aumenta la dificultad. Como en el anterior; deberás de completar un puzzle donde aparecerá un gato. Tienes que seleccionar cada una de las imágenes y arrastrarlas hasta las posiciones (franjas rectangulares). Ves con mucho ojo pues tienes una sola oportunidad de acierto, de lo contrario, deberás de volver a empezar.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+<body>
+	<div class="container">
+		<div class="row" id="comprobar">
+			<div class="col-12 col_compr">
+				<button type="button" class="btn btn-secondary " data-toggle="modal" data-target="#exampleModalCenter">
+			  		Comprobar resultado
+				</button>
+			</div>
+		</div>
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalCenterTitle">¿Has sido capaz de acertar el puzzle?</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <p id="resultado_total"></p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" id="btn_aceptar">Aceptar</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		
+	</div>
+
+	<div class="container container_game">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<div class="row">
+				<div class="col-12 div_img">
+					<div id="dropzone1" class="dropzone_pr2"></div>
+				</div>
+				<div class="col-12 div_img">
+					<div id="dropzone2" class="dropzone_pr2"></div>
+				</div>
+				<div class="col-12 div_img">
+					<div id="dropzone3" class="dropzone_pr2"></div>
+				</div>
+				<div class="col-12 div_img">
+					<div id="dropzone4" class="dropzone_pr2"></div>
+				</div>
+				<div class="col-12 div_img">
+					<div id="dropzone5" class="dropzone_pr2"></div>
+				</div>
+				<div class="col-12 div_img">
+					<div id="dropzone6" class="dropzone_pr2"></div>
+				</div>
+				</div>
+			</div>
+		
+
+			<div class=" col-12 col-md-6">
+				<div class="row" id="icons_drag">
+					<div class="col-6">
+						<img id="icon-cat1" class="icon" draggable="true" width="100%" src="imgPractica/fila-1-col-2.jpg">
+					</div>
+					<div class="col-6">
+						<img id="icon-cat2" class="icon" draggable="true" width="100%" src="imgPractica/fila-2-col-2.jpg">
+					</div>
+					<div class="col-6">
+						<img id="icon-cat3" class="icon" draggable="true" width="100%" src="imgPractica/fila-3-col-2.jpg">
+					</div>
+					<div class="col-6">
+						<img id="icon-cat4" class="icon" draggable="true" width="100%" src="imgPractica/fila-4-col-2.jpg">
+					</div>
+					<div class="col-6">
+						<img id="icon-cat5" class="icon" draggable="true" width="100%" src="imgPractica/fila-5-col-2.jpg">
+					</div>
+					<div class="col-6">
+						<img id="icon-cat6" class="icon" draggable="true" width="100%" src="imgPractica/fila-6-col-2.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div id="compr_archivo" style="background: red"></div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="puzzle_2.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+* {
+		margin: 0;
+		padding: 0;
+}
+body{
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif !important;
+}
+
+header{
+	background: #f7f7f7;
+	height: 50px;
+	line-height: 50px;
+	box-shadow: 0px 0px 20px 0px #c9c9c9;
+}
+
+header h1{
+	font-size: 20px !important;
+	display: inline;
+	font-weight: bold;
+	margin-left: 5px;
+
+}
+
+.titulo_h2{
+	margin-top: 40px;
+}
+
+.git_contact{
+	width: 60%;
+	text-align: center;
+	font-size: 14px;
+	text-decoration: none !important;
+}
+
+.compr_archivo{
+	display: none;
+}
+
+.git_contact a{
+	color: #A8A8A8;
+	text-decoration: none !important;
+	transition: 0.15s all;
+}
+
+.git_contact a:hover{
+	transition: 0.15s all;
+	color: #000;
+}
+
+.div_puntuacion, #div_resetear{
+	background-color: #fa5050;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 5px;
+}
+
+#div_resetear{
+	cursor: pointer;
+	transition: 0.3s all;
+}
+
+.col_compr{
+	justify-content: center;
+    display: flex;
+    margin-bottom: 29px;
+}
+
+#div_resetear:hover{
+	background-color: #a53535;
+	transition: 0.3s all;
+}
+
+.container_game{
+	margin-bottom: 80px;
+}
+
+header img{
+	width: 30px;
+	display: inline;
+}
+
+header .btn-secondary{
+	background-color: #fff !important;
+	color: #000 !important;
+}
+
+.instrucciones{
+	background-image: linear-gradient(to right, #741d52, #932457, #b02f59, #cd3d57, #e64f52);
+	height: 200px;
+	line-height: 200px;
+	color: #fff;
+	font-size: 20px;
+	margin: 30px 0px 30px 0px;
+	text-align: center;
+}
+
+.instrucciones span{
+	display:inline-block;
+	vertical-align:middle;
+	line-height:normal;
+}
+
+.instrucciones i{
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+img{
+	margin: 3px;
+}
+.dropzone{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 22px;
+}
+
+.div_img{
+   -moz-box-shadow: inset 0px 5px 20px #8F8F8F;
+   -webkit-box-shadow: inset 0px 5px 20px #8F8F8F;
+   box-shadow: inset 0px 5px 20px #8F8F8F;
+}
+
+h2{
+	font-size: 50px !important;
+	font-weight: bold !important;
+	margin-bottom: 20px; 
+}
+
+h3{
+	font-size: 17px;
+}
+
+p{
+	font-size: 25px;
+	color: red;
+	text-align: center;
+}
+
+.act{
+	padding: 5px;
+	border: 3px solid #000;
+	width: 35%;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+.contenedorDrop{
+	background: #fff;
+	padding: 10px;
+	box-shadow: 10px 10px 0px 10px 10px #000;
+	margin: 20px auto;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.divDrop{
+	color: #fff;
+	margin: 5px;
+	background-color: #fda8a8;
+	text-align: center;
+	width: 150px;
+	height: 150px;
+	position: relative;
+	transition: .3s all;
+}
+
+.divDrop:hover{
+	background: #FDCBCB;
+	transition: .3s all;
+}
+
+.aumentado{
+	transition: all 0.2s;
+	width: 210px;
+	height: 210px;
+	box-shadow: 0px 0px 15px #000;
+}
+
+.check{
+	width: 25%;
+	height: 25%;
+	position: absolute;
+	z-index: 1;
+	right: 2px;
+	bottom: 2px;
+}
+
+.check.novisible{
+	visibility: hidden;
+}
+
+.check.visible{
+	visibility: visible;
+}
+
+.dropzone {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-size: 90% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+li{
+	list-style: none;
+	text-align: center;
+	right: 15%;
+	position: absolute;
+
+}
+
+ul{
+	font-size: 15px;
+	background-color: grey;
+	width: 200px;
+	margin: 5px;
+	text-align: center;
+
+}

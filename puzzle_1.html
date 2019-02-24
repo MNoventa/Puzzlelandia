@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-4"><img src="imgPractica/logo.png" alt="">
+					<h1>Puzzlelandia</h1>
+				</div>
+				<div class="col-4 d-flex justify-content-center">
+					<div class="git_contact">
+						<a href="https://github.com/MNoventa" target="blank"><span class="fab fa-github"></span>  MNoventa</a>
+					</div>
+				</div>
+				<div class="col-4 text-right">
+					<div class="dropdown">
+					  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Ver puzzles
+					  </a>
+
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					    <a class="dropdown-item" href="puzzle_1.html">Arrastra las frutas (J-1)</a>
+					    <a class="dropdown-item" href="puzzle_2.html">Crea imagen de gatito (J-2)</a>
+					    <a class="dropdown-item" href="puzzle_3.html">Crea imagen de paisaje (J-3)</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container titulo_h2">
+		<div class="row">	
+			<div class="col-6">
+				<h2>Juego 1</h2>
+			</div>
+			<div class="col-6 d-flex justify-content-end">
+				<div class="div_puntuacion text-center">
+					Tu punutación es: <span id="puntuacion">0</span>/10
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="instrucciones">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<span><i class="fas fa-exclamation-triangle"></i>Fíjate en el nombre que contiene el interior de cada recuadro. Debes de hacer "click" en cada imagen y sin soltar el botón izquierdo del ratón, arrastrarla hasta el recuadro que contenga el nombre de la fruta que seleccionaste.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<div class="container container_game">
+		<div class="row">
+			<div class="col-12">	
+				<div class="contenedorDrop">		
+					<div class="divDrop">
+						<img src="imgPractica/check_green.png" class="check novisible">
+						<div id="dropzone-manzana" class="dropzone">
+							Manzana
+						</div>
+					</div>
+					<div class="divDrop">
+						<img src="imgPractica/check_green.png" class="check novisible">
+						<div id="dropzone-cereza" class="dropzone">
+							Cereza
+						</div>
+					</div>
+					<div class="divDrop">
+						<img src="imgPractica/check_green.png" class="check novisible">
+						<div id="dropzone-fresa" class="dropzone">
+							Fresa
+						</div>
+					</div>
+					<div class="divDrop">
+						<img src="imgPractica/check_green.png" class="check novisible">
+						<div id="dropzone-limon" class="dropzone">
+							Limón
+						</div>
+					</div>
+					<div class="divDrop">
+						<img src="imgPractica/check_green.png" class="check novisible">
+						<div id="dropzone-melon" class="dropzone">
+							Sandía
+						</div>
+					</div>
+					<div class="divDrop">
+						<img src="imgPractica/check_green.png" class="check novisible">
+						<div id="dropzone-pera" class="dropzone">
+							Pera
+						</div>
+					</div>
+					<div class="divDrop">
+						<img src="imgPractica/check_green.png" class="check novisible">
+						<div id="dropzone-platano" class="dropzone">
+							Plátano
+						</div>
+					</div>
+					<div class="divDrop">
+						<img src="imgPractica/check_green.png" class="check novisible">
+						<div id="dropzone-tomate" class="dropzone">
+							Tomate
+						</div>
+					</div>
+					<div class="divDrop">
+						<img src="imgPractica/check_green.png" class="check novisible">
+						<div id="dropzone-uvas" class="dropzone">
+							Uvas
+						</div>
+					</div>
+					<div class="divDrop">
+						<img src="imgPractica/check_green.png" class="check novisible">
+						<div id="dropzone-zanahoria" class="dropzone">
+							Zanahoria
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="contenedorDrop">
+					<img id="icon-manzana" width="95px" height="95px" class="icon" draggable="true" src="imgPractica/apple.png">
+					<img id="icon-platano" width="95px" height="95px" class="icon" draggable="true" src="imgPractica/bananas.png">
+					<img id="icon-zanahoria" width="95px" height="95px" class="icon" draggable="true" src="imgPractica/carrot.png">
+					<img id="icon-cereza" width="95px" height="95px" class="icon" draggable="true" src="imgPractica/cherries.png">
+					<img id="icon-uvas" width="95px" height="95px" class="icon" draggable="true" src="imgPractica/grapes.png">
+					<img id="icon-limon" width="95px" height="95px" class="icon" draggable="true" src="imgPractica/lemon.png">
+					<img id="icon-pera" width="95px" height="95px" class="icon" draggable="true" src="imgPractica/pear.png">
+					<img id="icon-fresa" width="95px" height="95px" class="icon" draggable="true" src="imgPractica/strawberry.png">
+					<img id="icon-tomate" width="95px" height="95px" class="icon" draggable="true" src="imgPractica/tomato.png">
+					<img id="icon-melon" width="95px" height="95px" class="icon" draggable="true" src="imgPractica/watermelon.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="puzzle_1.js"></script>
+</body>
+</html>
