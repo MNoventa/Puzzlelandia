@@ -13,6 +13,10 @@ header{
 	height: 50px;
 	line-height: 50px;
 	box-shadow: 0px 0px 20px 0px #c9c9c9;
+	z-index: 2;
+	position: fixed;
+	width: 100%;
+	top: 0;
 }
 
 header h1{
@@ -34,15 +38,8 @@ header h1{
 	text-decoration: none !important;
 }
 
-.compr_archivo{
+.compr_archivo{ 
 	display: none;
-}
-
-header {
-	z-index: 2;
-	position: fixed;
-	width: 100%;
-	top: 0;
 }
 
 .titulo_h2{
