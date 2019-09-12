@@ -38,6 +38,17 @@ header h1{
 	display: none;
 }
 
+header {
+	z-index: 2;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+.titulo_h2{
+	margin-top: 90px;
+}
+
 .git_contact a{
 	color: #A8A8A8;
 	text-decoration: none !important;
